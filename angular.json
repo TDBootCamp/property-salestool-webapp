@@ -28,9 +28,31 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/jqvmap/dist/jqvmap.min.css",
+              "src/assets/plugins/fontawesome-free/css/all.min.css",
+              "src/assets/dist/css/adminlte.min.css",
+              "src/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/chart.js//dist/Chart.min.js",
+              "node_modules/sparklines/source/sparkline.js",
+              "node_modules/jqvmap/dist/jquery.vmap.min.js",
+              "node_modules/jqvmap/dist/maps/jquery.vmap.usa.js",
+              "node_modules/jquery-knob/dist/jquery.knob.min.js",
+              "node_modules/moment/moment.js",
+              "node_modules/summernote/dist/summernote-bs4.min.js",
+              "src/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js",
+              "src/assets/dist/js/adminlte.js",
+              "src/assets/dist/js/pages/dashboard.js",
+              "src/assets/dist/js/demo.js",
+              "src/assets/plugins/jquery-ui/jquery-ui.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +145,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "property-salestool-webapp"
+    }
+  },
+  "defaultProject": "property-salestool-webapp",
+  "cli": {
+    "analytics": "7a25cbad-742d-4c7d-afd3-64c7cfce3c43"
+  }
 }
