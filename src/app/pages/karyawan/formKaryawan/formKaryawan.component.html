@@ -30,7 +30,7 @@
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form role="form">
+                    <form [formGroup]="addKaryawanForm" role="form">
                     <div class="card-body">
                         <div class="form-group">
                             <label for="exampleInputNama">Nama</label>
@@ -64,6 +64,13 @@
                             <label for="exampleInputIdEntry">ID Departemen</label>
                             <input type="text" class="form-control" id="exampleInputIdEntry" placeholder="ID Departemen">
                         </div>
+                        <div class="form-group">
+                            <label>Kota Lahir</label>
+                            <select class="form-control select2" formControlName="idKotaKab" style="width: 100%;">
+                              <option selected="selected">Alabama</option>
+                              <option *ngFor="let ar of listKotaKab" value="{{ ar.idKotaKab }}">{{ ar.namaKotaKab }}</option>
+                            </select>
+                          </div>
                     </div>
                     <!-- /.card-body -->
 

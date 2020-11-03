@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { SidebarComponent } from './layouts/sidebar/sidebar.component';
 import { FooterComponent } from './layouts/footer/footer.component';
@@ -26,7 +28,10 @@ import { FormKaryawanComponent } from './pages/karyawan/formKaryawan/formKaryawa
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
