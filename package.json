@@ -49,6 +49,7 @@
     "jsgrid": "^1.5.3",
     "jszip": "^3.5.0",
     "moment": "^2.29.1",
+    "ng-select2": "^1.2.3",
     "pace-progress": "^1.0.2",
     "pdfmake": "^0.1.68",
     "popper": "^1.0.1",
