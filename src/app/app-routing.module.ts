@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { FormKaryawanComponent } from './pages/karyawan/formKaryawan/formKaryawan.component';
+import { KaryawanComponent } from './pages/karyawan/karyawan.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:"form-karyawan",
     component:FormKaryawanComponent
+  },
+  {
+    path:"data-karyawan",
+    component:KaryawanComponent
   }
 ];
 

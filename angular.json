@@ -38,6 +38,7 @@
               "node_modules/select2/dist/css/select2.min.css",
               "node_modules/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css",
               "node_modules/bootstrap4-duallistbox/dist/bootstrap-duallistbox.min.css",
+              "node_modules/pace-progress/themes/black/pace-theme-flat-top.css",
               "src/assets/plugins/fontawesome-free/css/all.min.css",
               "src/assets/dist/css/adminlte.min.css",
               "src/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
@@ -58,6 +59,7 @@
               "node_modules/select2/dist/js/select2.full.min.js",
               "node_modules/bootstrap4-duallistbox/dist/jquery.bootstrap-duallistbox.min.js",
               "node_modules/inputmask/dist/jquery.inputmask.min.js",
+              "node_modules/pace-progress/pace.min.js",
               "src/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js",
               "src/assets/dist/js/adminlte.js",
               "src/assets/dist/js/pages/dashboard.js",
