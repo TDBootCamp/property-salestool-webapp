@@ -34,7 +34,7 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="exampleInputNama">ID</label>
-                            <input type="email" class="form-control" formControlName="idKaryawan" id="exampleInputNama" placeholder="Nama">
+                            <input type="email" class="form-control" formControlName="idKaryawan" id="exampleInputNama" placeholder="ID">
                             <span *ngIf="!addKaryawanForm.get('idKaryawan').valid && addKaryawanForm.get('idKaryawan').touched" class="danger">Nama Wajib Diisi</span>
                         </div>
                         <div class="form-group">
@@ -42,7 +42,7 @@
                             <input type="text" class="form-control" formControlName="kodeNpk" id="exampleInputIdEntry" placeholder="Kode NPK">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputIdEntry">Nama Karyawan</label>
+                            <label for="exampleInputIdEntry">Nama Jabatan</label>
                             <input type="text" class="form-control" formControlName="namaKaryawan" id="exampleInputIdEntry" placeholder="Nama Jabatan">
                         </div>
                         <!-- <div class="form-group">
@@ -75,11 +75,11 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputIdEntry">Nomor Induk Kependudukan</label>
-                            <input type="text" class="form-control" formControlName="nik" id="exampleInputIdEntry" placeholder="Nama Jabatan">
+                            <input type="text" class="form-control" formControlName="nik" id="exampleInputIdEntry" placeholder="Nomor Induk Kependudukan">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputIdEntry">Nomor Telepon</label>
-                            <input type="text" class="form-control" formControlName="noTelp" id="exampleInputIdEntry" placeholder="Nama Jabatan">
+                            <input type="text" class="form-control" formControlName="noTelp" id="exampleInputIdEntry" placeholder="Nomor Telepon">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputIdEntry">Email</label>
@@ -103,7 +103,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputIdEntry">Kode Marketing</label>
-                            <input type="text" class="form-control" formControlName="kodeMarketing" id="exampleInputIdEntry" placeholder="Nama Jabatan">
+                            <input type="text" class="form-control" formControlName="kodeMarketing" id="exampleInputIdEntry" placeholder="Kode Marketing">
                         </div>
                     </div>
                     <!-- /.card-body -->
