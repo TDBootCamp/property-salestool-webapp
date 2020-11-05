@@ -45,10 +45,19 @@
                             <label for="exampleInputIdEntry">Nama Karyawan</label>
                             <input type="text" class="form-control" formControlName="namaKaryawan" id="exampleInputIdEntry" placeholder="Nama Jabatan">
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="exampleInputIdEntry">Tanggal Masuk Staff</label>
                             <input type="text" class="form-control" formControlName="tanggalMasukStaff" id="exampleInputIdEntry" placeholder="Nama Jabatan">
-                        </div>
+                        </div> -->
+                        <div class="form-group">
+                            <label>Tanggal Masuk Staff:</label>
+                              <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                                  <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
+                                  <div class="input-group-append" data-target="#reservationdate" formControlName="tanggalMasukStaff" data-toggle="datetimepicker">
+                                      <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                  </div>
+                              </div>
+                          </div>
                         <div class="form-group">
                             <label for="exampleInputIdEntry">ID Kantor</label>
                             <input type="text" class="form-control" formControlName="idKantor" id="exampleInputIdEntry" placeholder="ID Kantor">
@@ -58,8 +67,11 @@
                             <input type="text" class="form-control" formControlName="idKantorCabang" id="exampleInputIdEntry" placeholder="ID Kantor Cabang">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputIdEntry">ID Departemen</label>
-                            <input type="text" class="form-control" formControlName="idDepartemen" id="exampleInputIdEntry" placeholder="ID Departemen">
+                            <label>Department</label>
+                            <select class="form-control select2" formControlName="idDepartmen" style="width: 100%;">
+                              <option selected="selected">Pilih Department</option>
+                              <option *ngFor="let dep of listDepartment" value="{{ dep.id }}">{{dep.id}} - {{ dep.namaDepartment }} - {{ dep.kodeDepartment }}</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputIdEntry">Nomor Induk Kependudukan</label>
@@ -84,7 +96,7 @@
                         </div>
                         <div class="form-group">
                             <label>Kota Lahir</label>
-                            <select class="form-control " formControlName="kotaLahir" style="width: 100%;">
+                            <select class="form-control select2" formControlName="kotaLahir" style="width: 100%;">
                               <option selected="selected">Pilih Kota/Kabupaten</option>
                               <option *ngFor="let ar of listKotaKab" value="{{ ar.idKotaKab }}">{{ ar.namaKotaKab }}</option>
                             </select>

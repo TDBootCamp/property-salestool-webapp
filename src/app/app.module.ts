@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { KaryawanComponent } from './pages/karyawan/karyawan.component';
 import { UserComponent } from './pages/user/user.component';
 import { FormKaryawanComponent } from './pages/karyawan/formKaryawan/formKaryawan.component';
+import { DepartmentComponent } from './master/department/department.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FormKaryawanComponent } from './pages/karyawan/formKaryawan/formKaryawa
     LoginComponent,
     KaryawanComponent,
     UserComponent,
-    FormKaryawanComponent
+    FormKaryawanComponent,
+    DepartmentComponent
   ],
   imports: [
     BrowserModule,
